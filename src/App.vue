@@ -120,7 +120,7 @@ export default {
         this.loading = false;
       } else {
         // Redirect after sending
-        location.replace("https://www2.grm.net/");
+        location.replace("https://grmm-card.vercel.app/");
       }
     },
 
